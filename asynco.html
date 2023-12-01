@@ -7,13 +7,23 @@
 </head>
 <body>
     <script>
-        console.log("I");
-        console.log("EAT");
-        setTimeout(()=>{
-            console.log("ICE CREAM");
-        },5000);
-        console.log("WITH A");
-        console.log("SPOON");
+        // console.log("I");
+        // console.log("EAT");
+        // setTimeout(()=>{
+        //     console.log("ICE CREAM");
+        // },5000);
+        // console.log("WITH A");
+        // console.log("SPOON");
+
+        //error handling
+
+const API_URL = "https: //invalid";
+async function handlePromise(){
+    const data = await fetch(API_URL);
+    const jsonvalue = await data.json();
+    console.log(jsonvalue);
+}
+handlePromise().catch((err)=>console.log(err));
     </script>
     
 </body>
